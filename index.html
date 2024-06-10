@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Movie Ranking</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne+Tactile&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#0000ff] scroll-smooth items-center text-[#e5e5ff] ">
+    <header class="sticky text-3xl">
+      <h1 class="text-4xl text-[#ffff00]">BOX-RANKS</h1>
+      <div id="header-div">
+        <ul class="text-[#80ff00] header-ul" id="header-ul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#genres">Genres</a></li>
+          <li><a href="#wishlist">Favourites</a></li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="">
+      <div class="items-center flex flex-col" id="intro-div">
+        <h1 class="text-7xl text-center">Movie Box Hub</h1>
+        <p class="py-8 w-1/3 text-center" id="intro-p">
+          Dive into the world of cinema with Box-Ranks, your ultimate
+          destination for discovering and ranking the best movies. Whether
+          you're a casual viewer or a die-hard film buff, our site offers a
+          comprehensive and dynamic platform for all your movie ranking needs.
+        </p>
+        <div class="carousel w-5/6 md:scroll-auto focus:scroll-auto">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/venom.jpg" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"  >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/spiderman.jpeg" /> Spiderman<a/>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/justice-league.jpg" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/the-boys.jpg" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <h1 class="text-7xl text-[#ffff00] text-center mt-8" id="genres" >
+        MOVIE GENRES
+    </h1>
+    <section class="flex flex-wrap basis-1/2 mt-6 border-black justify-between p-[30px]">
+        <div class="card w-96 bg-base-100 shadow-xl bg-[#007fff]">
+            <figure><img src="./images/action.jpg" alt="Action" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Action</h2>
+              <p>With a blend of fast-paced storytelling, intense combat scenes, and innovative special effects, action movies offer a visceral cinematic experience. </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Browse</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl bg-[#007fff]">
+            <figure><img src="./images/adventure.png" alt="Adventure" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Adventure</h2>
+              <p>Defined by their emphasis on exploration, discovery, and heroism, these films ignite the imagination with tales of epic quests and breathtaking landscapes. Characters in adventure movies often embark on perilous missions, seeking out hidden treasures, ancient artifacts, or mysterious realms.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Get Exploring</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl bg-[#007fff]">
+            <figure><img src="./images/sci-fi.jpg" alt="Sci-Fi" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Sci-Fi</h2>
+              <p>Where the boundaries of reality are stretched and the possibilities of the future are explored. Characterized by visionary concepts, cutting-edge technology, and speculative science, these films delve into the mysteries of the universe and the potential of human innovation.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Explore</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl mt-8 bg-[#007fff]">
+            <figure><img src="./images/after-everything.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Romance</h2>
+              <p>rich with diverse narratives, from light-hearted romantic comedies that spark joy and laughter to poignant dramas that explore the depths of heartbreak and longing.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Discover</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl mt-8 bg-[#007fff]">
+            <figure><img src="./images/the-nun.jpg" alt="Horror" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Horror</h2>
+              <p>Whether through psychological terror, gruesome creatures, or haunting atmospheres, horror movies captivate viewers with their ability to evoke primal fears and thrill with unexpected twists.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Get Thrilled</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl mt-8 bg-[#007fff]">
+            <figure><img src="./images/miles-morales.jpg" alt="Animation" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Animation</h2>
+              <p>Whether it's a whimsical fantasy, a touching coming-of-age story, or a thrilling action-packed journey, animation movies offer something for everyone. They often feature rich storytelling, memorable characters, and a blend of humor and emotion that resonate deeply with viewers.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Explore</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <h1 class="text-7xl text-[#ffff00] text-center mt-8" id="wishlist">Wishlist</h1>
+<section class="flex flex-wrap basis-1/2 mt-8 p-[30px] justify-around">
+    <div class="card card-side bg-base-100 shadow-xl w-1/2.5 mt-8">
+        <figure><img src="./images/atlas.png" alt="Atlas"/></figure>
+        <div class="card-body items-center mt-8">
+          <h2 class="card-title">Atlas</h2>
+          <h2 class="text-7xl text-[#ffff00]">
+            2024
+          </h2>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary"><a href="https://www.youtube.com/watch?v=Jokpt_LJpbw&pp=ygUNYXRsYXMgdHJhaWxlcg%3D%3D">Watch Trailer</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-side bg-base-100 shadow-xl w-1/2.5 mt-8">
+        <figure><img src="./images/extraction.jpg" alt="Movie"/></figure>
+        <div class="card-body items-center mt-8">
+          <h2 class="card-title">Extraction</h2>
+          <h2 class="text-7xl text-[#ffff00]">2023</h2>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary"><a href="https://www.youtube.com/watch?v=Y274jZs5s7s&pp=ygUUZXh0cmFjdGlvbiAyIHRyYWlsZXI%3D">Watch Trailer</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-side bg-base-100 shadow-xl w-1/2.5 mt-8">
+        <figure><img src="./images/sisu.png" alt="Movie"/></figure>
+        <div class="card-body items-center mt-8">
+          <h2 class="card-title">Sisu</h2>
+          <h2 class="text-7xl text-[#ffff00]">2022</h2>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary"><a href="https://www.youtube.com/watch?v=2NnPzpuU5ao&pp=ygUMc2lzdSB0cmFpbGVy">Watch Trailer</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-side bg-base-100 shadow-xl w-1/2.5 mt-8">
+        <figure><img src="./images/bloodshot.jpeg" alt="Movie"/></figure>
+        <div class="card-body items-center mt-8">
+          <h2 class="card-title">Bloodshot</h2>
+          <h2 class="text-7xl text-[#ffff00]">2020</h2>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary"><a href="https://www.youtube.com/watch?v=vOUVVDWdXbo&pp=ygURYmxvb2RzaG90IHRyYWlsZXI%3D" target="_blank">Watch Trailer</a></button>
+          </div>
+        </div>
+      </div>
+</section>
+      
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content" id="footer">
+        <aside>
+          <svg width="50" height="50" viewBox="0 0 24 24" xmlns="<a href="https://www.flaticon.com/free-icons/entertainment" title="entertainment icons">Entertainment icons created by rukanicon - Flaticon</a>" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+          <p>BOX-RANKS Inc.<br>Providing reliable entertainment since 2006</p>
+          &copyLittle-Man
+        </aside> 
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Rating</a>
+          <a class="link link-hover">Hosting</a>
+          <a class="link link-hover">Filming</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a href="mailto:muwanguzielijah44@gmail.com">Contact Us</a>
+          <div class="icons">
+            <a href="https://t.me/Slimm_J"><img src="../images/telegram.png" alt="Telegram" width="30px"></a>
+            <a href="tel: +256758099487"><img src="../images/whatsapp.png" alt="Whatsapp" width="30px"></a>
+            <a href="https://www.instagram.com/jelo.king/"><img src="../images/instagram.png" alt="Instagram" width="30px"></a>
+            <a href="https://x.com/Elijah16583778"><img src="../images/twitter.png" alt="Twitter" width="30px"></a>
+           </div> 
+        </nav> 
+        <nav>
+     <hr>
+
+      </footer>
+  </body>
+</html>
